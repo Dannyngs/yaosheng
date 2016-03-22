@@ -3,6 +3,9 @@ require_once 'init.php';
 $rs = $db->query("SELECT* FROM T_Product where shown_homepage=1 limit 4");
     $services = $rs->fetchAll();
 
+    $rs = $db->query("SELECT* FROM T_News order by ymd desc limit 4");
+        $newses = $rs->fetchAll();
+
 ?>
 
 <?php
@@ -15,19 +18,19 @@ require_once 'header.php';
         <ol class="carousel-indicators">
           <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
           <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-         
+
         </ol>
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
           <div class="item allw active">
             <img src="_/images/banner.jpg" alt="">
-            
+
           </div>
           <div class="item allw">
             <img src="_/images/banner2.jpg" alt="">
           </div>
-         
+
         </div>
 
         <!-- Controls -->
@@ -40,7 +43,7 @@ require_once 'header.php';
           <span class="sr-only">Next</span>
         </a>
       </div>
-      
+
       <div class="bgbf ptb20">
         <div class="container">
           <h3 class="tit text-center"><span>关于耀升</span></h3>
@@ -59,8 +62,8 @@ require_once 'header.php';
           <div class="row mb30">
 
 
-              <?php  foreach($services as $show)          
-{?>   
+              <?php  foreach($services as $show)
+{?>
 
 
 
@@ -73,8 +76,8 @@ require_once 'header.php';
 
                     <?php
     }
-?> 
-           
+?>
+
 
           </div>
           <p class="text-center mb30">
@@ -96,8 +99,8 @@ require_once 'header.php';
                     <img src="_/images/in1.jpg">
                   </div>
                   <div class="col-md-6 line20">
-                    <h4><b>2016耀升公司感恩年会</b></h4>
-                    <p>回首往昔，羊年对于我们每个人来说都难以忘怀，他给予了我们希望，收获，更重要的是给予了我们成长的经历。<br/>展望未来，一年胜似一年景，马到成功，迎来美好明天，我们坚信：公司的事业一定能蒸蒸日上，明天将更加美好！</p>
+                    <h4><b><?php echo $newses[0]['title']; ?></b></h4>
+                    <p><?php echo $newses[0]['content']; ?></p>
                   </div>
                 </a>
               </div>
@@ -105,18 +108,20 @@ require_once 'header.php';
 
             <div class="col-md-5">
                <ul class="list-unstyled">
-               <li><a class="newsl clearfix" href="#">2015年11月28日公司组织户外活动<span class="pull-right">2016/1/2</span></a></li>
 
-               <li><a class="newsl clearfix" href="#">中铁总中标印度高铁项目全长约1200公里<span class="pull-right">2016/1/2</span></a></li>
 
-               <li><a class="newsl clearfix" href="#">工业胶带在工业各领域中得到了日益广泛的应<span class="pull-right">2016/1/2</span></a></li>
+
+               <li><a class="newsl clearfix" href="#"><?php echo $newses[1]['title']; ?><span class="pull-right"><?php echo $newses[1]['ymd']; ?></span></a></li>
+               <li><a class="newsl clearfix" href="#"><?php echo $newses[2]['title']; ?><span class="pull-right"><?php echo $newses[2]['ymd']; ?></span></a></li>
+               <li><a class="newsl clearfix" href="#"><?php echo $newses[3]['title']; ?><span class="pull-right"><?php echo $newses[3]['ymd']; ?></span></a></li>
+
 
                </ul>
                <a href="news.php" style="text-decoration:underline;">more</a>
             </div>
 
           </div>
-         
+
       </div>
     </div>
   </div><!--content end-->
