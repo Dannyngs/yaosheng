@@ -45,9 +45,9 @@ require_once 'header.php';
         <div class="container">
           <h3 class="tit text-center"><span>关于耀升</span></h3>
           <h4 class="text-center mb30">我司专业生产：特殊粘胶带、3M胶带、电子专用胶带等，欢迎来电咨询</h4>
-          <p>深圳市耀升胶粘制品有限公司成立于2011年，从2003年初在东莞开始从业特殊胶粘带，2005年成立深圳隆胜胶粘带贸易公司，2007年变更为裕隆胶粘带经营部，2009年成立为裕隆耀升胶粘制品有限公司；经过公司全体员工的共同努力与积极拓展，使公司不断壮大，在这相近十年的时间，公司积累丰富的经验，现采取“多行业跨越，高品质服务”的经营策略，遵循“以质量求生存，以诚信求发展”的经营理念，建立高度的信誉和优质的服务、合理的价格为客户提供高品质的产品和完善的服务，使公司在胶粘制品行业逐步发展，成为销售、产生。</p>
+          <p><?php echo $system['description']?></p>
           <p class="text-center mb30">
-              <a href="#" class="btn btn-outline btn-lg">关于我们</a>
+              <a href="about.php" class="btn btn-outline btn-lg">关于我们</a>
           </p>
       </div>
     </div>
@@ -78,7 +78,7 @@ require_once 'header.php';
 
           </div>
           <p class="text-center mb30">
-              <a href="#" class="btn btn-outline btn-lg">更多产品</a>
+              <a href="product.php?id=1" class="btn btn-outline btn-lg">更多产品</a>
           </p>
       </div>
     </div>
@@ -88,6 +88,7 @@ require_once 'header.php';
           <h3 class="tit text-center"><span>新闻资讯</span></h3>
           <h4 class="text-center mb30">耀升提供高品质的产品和完善的服务</h4>
           <div class="row">
+
             <div class="col-md-7">
               <div class="row">
                <a class="fcb" href="#">
@@ -111,7 +112,7 @@ require_once 'header.php';
                <li><a class="newsl clearfix" href="#">工业胶带在工业各领域中得到了日益广泛的应<span class="pull-right">2016/1/2</span></a></li>
 
                </ul>
-               <a href="" style="text-decoration:underline;">more</a>
+               <a href="news.php" style="text-decoration:underline;">more</a>
             </div>
 
           </div>
