@@ -1,0 +1,60 @@
+body{font-family:Helvetica,sans-serif,"微軟正黑體";font-size:15px;}
+a:active,a:focus{outline:none;}
+
+.ptb20{padding-top:3%;padding-bottom:3.5%;}
+
+.mt2{margin-top:20px;}
+.mt4{margin-top:40px;}
+.mt6{margin-top:26px;}
+.mt50{margin-top:50%;margin-left:15px;}
+.mb{margin-bottom:30px;}
+
+
+.maxw{text-align:center;}
+.maxw img{max-width:100%;    border-radius: 8px;}
+.round img{border-radius:6px;}
+
+.p1{font-size:16px;line-height:27px;}
+.p2 h3,.p3 h3{font-weight: 600;}.p3 h3{text-align:center;}
+.p2 b{margin-top:20px;display: block;}
+.p2,.p3{font-size:15px;line-height:30px;color:#fff;}
+
+.fcblue,.p2 h3,.p2 b,.p3 h3,.p2 strong{color:#5493ae;}
+.fcb{color:#1a1a1a;}
+.fcw{color:#fff;}
+
+@media (min-width:1200px){.container{width:1062px}}
+.navbar-brand{height:auto;}
+.navbar-default{background-color:#fff;border:none;}.navbar{margin-bottom:0;}
+@media (min-width:992px){.navbar-right{margin-top: 45px;}}
+@media (min-width:768px){.navbar-brand{padding:30px 15px;}.navbar-nav > li > a{padding:6px 9px;margin-right:10px;}.mb2{margin-bottom:70px;}
+.footer{padding-top:50px;padding-bottom:30px;}.fs19{font-size:1.2em;}}
+@media (max-width:768px){
+  .footer{padding-top:30px;padding-bottom:30px;} .fs19{font-size:0.93em;} 
+}
+.navbar-default .navbar-nav > li > a,.xslan a{color:#5493ae;border-radius:3px;text-decoration:none;}
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover,.xslan a:focus{color:#fff;background-color:#5493ae;}
+
+.lan > li > a{margin-right:2px;}.lan{margin-left:8px;}
+.xslan{position:absolute;right:15px;top:52px;}
+.xslan a{padding:5px;}
+
+.content{background-color:#0a263a;color:#fff;}
+.title{font-size:2em;color:#e2e2e2;}.title span,.moret a{display:inline-block;line-height:1.8em;border-bottom:2px solid #fff;}
+.inser{display:block;overflow:hidden;position:relative;border-radius:8px;}
+
+.move{position:absolute;left:0;top:220px;right:0;bottom:-3px;background: rgba(0,0,0,0.5);transition:top 0.5s;padding:20px 18px;}
+.inser:hover .move{top:0;} 
+.btn-primary {color: #fff;background-color: #5493ae;border-color: #5493ae;}
+
+.moret a{font-size:1.2em;}.moret a:hover{text-decoration:none;}
+
+.footer{background-color:#f5f5f5;line-height:24px;font-size:15px;}
+.footer-bg{background:url('../images/foot-bg.jpg') center right no-repeat; }
+.copy{font-size:14px;color:#1a1a1a;margin-top:-8px}
+.rlicon{font-size:28px;margin-top:15px;margin-bottom: 15px;}
+.p3{border-bottom:1px solid #fff;padding-bottom:30px;}
+.row .p3:last-child{border:none;}
+.contact{background:url('../images/cont-bg.jpg') center no-repeat;background-size: cover;}
+.bg-b{background-color:#0a263a;border-color:#0a263a;}
+button.bg-b{word-spacing:3px;letter-spacing:3px; padding-left:23px;padding-right:20px;}
