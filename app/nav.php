@@ -14,11 +14,11 @@
                       
                            
                         echo "<li class='dropdown'>";
-                        echo "<a class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>".$item[$current_lang.'_title']."<span class='caret'></span></a>";
+                        echo "<a class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>".$item['title']."<span class='caret'></span></a>";
                           echo "<ul class='dropdown-menu'>";
                               foreach ($submenu as $subitem){
                           
-                                         echo "<li class='allw' ><a  href='".$subitem['url']."'>".$subitem[$current_lang.'_title']."</a>";
+                                         echo "<li class='allw' ><a  href='".$subitem['url']."'>".$subitem['title']."</a>";
 
                                 }
                             echo "</ul>";
@@ -26,7 +26,7 @@
                        }else{
                            
                         echo "<li >";
-                        echo "<a href='".$item['url']."'>".$item[$current_lang.'_title']."</a>";
+                        echo "<a href='".$item['url']."'>".$item['title']."</a>";
 
                             
                        }

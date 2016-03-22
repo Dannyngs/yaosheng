@@ -58,5 +58,5 @@ switch ($current_lang) {
   $lang_file = 'eng.php';
 
 }
-include_once 'lang/'.$lang_file;
+
   ?>
