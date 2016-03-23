@@ -81,7 +81,7 @@ require_once 'header.php';
 
           </div>
           <p class="text-center mb30">
-              <a href="product.php?id=1" class="btn btn-outline btn-lg">更多产品</a>
+              <a href="products.php?id=<?php echo $system['more_pro_id']?>" class="btn btn-outline btn-lg">更多产品</a>
           </p>
       </div>
     </div>

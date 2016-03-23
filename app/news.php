@@ -22,15 +22,15 @@ require_once 'header.php';
 
 
               <div class="col-md-4 mtb20">
-                
+                <a href="new-post.php?id=<?php echo $new['id']?>">
                   <h4 class="text-center"><?php echo $new['title'];?></h4>
                   <hr class="nl" />
                   <p class="text-center fch"><?php echo $new['ymd'];?></p>
                   <div class="allw mb20">
-                    <img src="<?php echo $imgurl.$new['img'];?>">
+                    <img src="<?php echo $imgurl.$new['img_list'];?>">
                   </div>
-                  <p class="neww"><?php echo $new['content'];?></p>
-               
+                  <p class="neww"><?php echo $new['exp'];?></p>
+                </a>
               </div>
 
 
