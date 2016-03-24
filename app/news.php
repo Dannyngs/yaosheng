@@ -9,7 +9,7 @@ require_once 'header.php';
 ?>
 
  <div class="content">
-      <div class="allw"><img src="_/images/ab-ban.jpg"></div>
+      <div class="allw"><img src="_/images/new-ban.jpg"></div>
 
        <div class="ptb20">
           <div class="container">

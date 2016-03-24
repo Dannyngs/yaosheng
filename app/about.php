@@ -1,7 +1,7 @@
 <?php
 require_once 'init.php';
   
-$rs = $db->query("SELECT* FROM T_Menu where parent_id=4");
+$rs = $db->query("SELECT* FROM T_Cat order by sort");
     $cats = $rs->fetchAll();
 
   $rs = $db->query("SELECT* FROM T_Page where id=1");
@@ -43,7 +43,7 @@ require_once 'header.php';
 
            <?php  foreach($cats as $cat)          
 {?>   
-  <a href="<?php echo $cat['url']?>" class="btn btn-outline btn-lg w1"><?php echo $cat['title']?></a>
+  <a href="products.php?id=<?php echo $cat['id']?>" class="btn btn-outline btn-lg w1"><?php echo $cat['cat_name']?></a>
 
 
 

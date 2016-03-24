@@ -10,7 +10,7 @@ require_once 'header.php';
 ?>
 
  <div class="content">
-      <div class="allw"><img src="_/images/ab-ban.jpg"></div>
+      <div class="allw"><img src="_/images/new-ban.jpg"></div>
 
        <div class="ptb20">
           <div class="container">
@@ -24,18 +24,15 @@ require_once 'header.php';
                   
                   <p class="text-center fch"><?php echo $newp['ymd'];?></p>
                   <hr class="nl" style="width:100%" />
-                  <div class="allw mtb20">
-                  <img src="<?php echo $imgurl.$newp['img_post'];?>">
-                    
-                  </div>
-                  <div class="neww">
+                  
+                  <div class="allw mtb20 neww">
                    <?php echo $newp['content']?>
                   </div>
                
               </div>
 
             </div>
-            <p class="text-right"><a href="javascript:;" onClick="javascript :history.back(-1);">返回</a></p>
+            <p class="text-right"><a href="news.php" >返回</a></p>
             
         </div>
       </div>

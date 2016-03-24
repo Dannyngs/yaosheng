@@ -6,6 +6,10 @@ $rs = $db->query("SELECT* FROM T_Product where shown_homepage=1 limit 4");
     $rs = $db->query("SELECT* FROM T_News order by ymd desc limit 4");
         $newses = $rs->fetchAll();
 
+
+     $rs = $db->query("SELECT* FROM T_Banner order by sort");
+    $banners = $rs->fetchAll();
+
 ?>
 
 <?php
@@ -23,13 +27,14 @@ require_once 'header.php';
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
-          <div class="item allw active">
-            <img src="_/images/banner.jpg" alt="">
-
-          </div>
-          <div class="item allw">
-            <img src="_/images/banner2.jpg" alt="">
-          </div>
+    
+    <?php  foreach($banners as $key=>$ban)          
+{?>   
+            
+            <div class="item allw <?php if($key==0)echo 'active'; ?>">
+            <img src="<?php echo $imgurl.$ban['img'] ?>" alt="">
+            </div>
+            <?php } ?> 
 
         </div>
 
@@ -94,9 +99,9 @@ require_once 'header.php';
 
             <div class="col-md-7">
               <div class="row">
-               <a class="fcb" href="#">
+               <a class="fcb" href="new-post.php?id=<?php echo $newses[0]['id']; ?>">
                   <div class="col-md-6 allw">
-                    <img src="_/images/in1.jpg">
+                    <img src="<?php echo $imgurl.$newses[0]['img_list']; ?>">
                   </div>
                   <div class="col-md-6 line20">
                     <h4><b><?php echo $newses[0]['title']; ?></b></h4>
@@ -111,9 +116,9 @@ require_once 'header.php';
 
 
 
-               <li><a class="newsl clearfix" href="#"><?php echo $newses[1]['title']; ?><span class="pull-right"><?php echo $newses[1]['ymd']; ?></span></a></li>
-               <li><a class="newsl clearfix" href="#"><?php echo $newses[2]['title']; ?><span class="pull-right"><?php echo $newses[2]['ymd']; ?></span></a></li>
-               <li><a class="newsl clearfix" href="#"><?php echo $newses[3]['title']; ?><span class="pull-right"><?php echo $newses[3]['ymd']; ?></span></a></li>
+               <li><a class="newsl clearfix" href="new-post.php?id=<?php echo $newses[1]['id']; ?>"><?php echo $newses[1]['title']; ?><span class="pull-right"><?php echo $newses[1]['ymd']; ?></span></a></li>
+               <li><a class="newsl clearfix" href="new-post.php?id=<?php echo $newses[2]['id']; ?>"><?php echo $newses[2]['title']; ?><span class="pull-right"><?php echo $newses[2]['ymd']; ?></span></a></li>
+               <li><a class="newsl clearfix" href="new-post.php?id=<?php echo $newses[3]['id']; ?>"><?php echo $newses[3]['title']; ?><span class="pull-right"><?php echo $newses[3]['ymd']; ?></span></a></li>
 
 
                </ul>

@@ -19,14 +19,14 @@
 
              <dl class="dl-horizontal clearfix">
               <dt><span class="glyphicon glyphicon-print pull-left" aria-hidden="true"></span>传真</dt>
-              <dd><?php echo $system['line']?></dd>
+              <dd><?php echo $system['fax']?></dd>
             </dl>
 
           </div>
           <div class="col-md-4">
             <p><img style="max-width:100%" src="_/images/f-logo.jpg"></p>
             <p>
-              <a class="mr10" href="#"><img src="_/images/wb.jpg"></a>
+              <a class="mr10" target="_blank" href="<?php echo $system['weibo']?>"><img src="_/images/wb.jpg"></a>
               <a href="#"><img src="_/images/wx.jpg"></a>
             </p>
           </div>
@@ -45,9 +45,11 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="_/js/lightbox.min.js"></script>
     <script src="_/js/bootstrap.min.js"></script>
+    <script src="_/js/jquery.lazyload.min.js"></script>
+
      <script type="text/javascript">
  $(document).ready(function(){
-      
+     $("img.lazy").lazyload(); 
  $('#mysubmit').click(function(event){
      event.preventDefault();
  $('#mysubmit').attr("disabled",true); 

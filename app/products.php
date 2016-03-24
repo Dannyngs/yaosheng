@@ -1,6 +1,6 @@
 <?php
 require_once 'init.php';
- $rs = $db->query("SELECT* FROM T_Product where cid=".$_GET['id']);
+ $rs = $db->query("SELECT* FROM T_Product where cid=$_GET[id] order by sort");
     $pros = $rs->fetchAll();
 
   ?>
@@ -23,9 +23,9 @@ require_once 'header.php';
 
 
    <div class="col-md-3 mtb20">
-                  <a class="pro"  href="<?php echo $imgurl.$pro['image'];?>" data-lightbox="<?php echo $pro['cid']?>" data-title="UY-902 PE">
+                  <a class="pro"  href="<?php echo $imgurl.$pro['image'];?>" data-lightbox="<?php echo $pro['cid']?>" data-title="<?php echo $pro['title']?>">
                     <div class="allw">
-                      <img src="<?php echo $imgurl.$pro['image'];?>">
+                      <img class="lazy" data-original="<?php echo $imgurl.$pro['image'];?>">
                     </div>
                     <div class="move text-center">
                      <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>

@@ -21,3 +21,8 @@ ERROR - 2016-03-22 13:13:01 --> Severity: Notice  --> Only variable references s
 ERROR - 2016-03-22 13:13:02 --> Severity: Notice  --> Only variable references should be returned by reference E:\yaosheng\app\admin\system\core\Common.php 257
 ERROR - 2016-03-22 13:13:02 --> Severity: Warning  --> date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. E:\yaosheng\app\admin\application\third_party\scrud\libraries\crud.php 1050
 ERROR - 2016-03-22 13:13:02 --> Severity: Notice  --> Only variable references should be returned by reference E:\yaosheng\app\admin\system\core\Common.php 257
+ERROR - 2016-03-22 13:13:31 --> Severity: Notice  --> Only variable references should be returned by reference E:\yaosheng\app\admin\system\core\Common.php 257
+ERROR - 2016-03-22 13:13:32 --> Severity: Notice  --> Only variable references should be returned by reference E:\yaosheng\app\admin\system\core\Common.php 257
+ERROR - 2016-03-22 13:13:34 --> Severity: Notice  --> Only variable references should be returned by reference E:\yaosheng\app\admin\system\core\Common.php 257
+ERROR - 2016-03-22 13:13:34 --> Severity: Notice  --> Only variable references should be returned by reference E:\yaosheng\app\admin\system\core\Common.php 257
+ERROR - 2016-03-22 13:13:35 --> Severity: Notice  --> Only variable references should be returned by reference E:\yaosheng\app\admin\system\core\Common.php 257
