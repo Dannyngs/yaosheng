@@ -453,3 +453,5 @@ ERROR - 2016-03-24 13:26:05 --> Severity: Notice  --> Only variable references s
 ERROR - 2016-03-24 13:26:47 --> Severity: Notice  --> Only variable references should be returned by reference E:\yaosheng\app\admin\system\core\Common.php 257
 ERROR - 2016-03-24 13:27:02 --> Severity: Notice  --> Only variable references should be returned by reference E:\yaosheng\app\admin\system\core\Common.php 257
 ERROR - 2016-03-24 13:27:21 --> Severity: Notice  --> Only variable references should be returned by reference E:\yaosheng\app\admin\system\core\Common.php 257
+ERROR - 2016-03-24 14:06:42 --> Severity: Notice  --> Only variable references should be returned by reference E:\yaosheng\app\admin\system\core\Common.php 257
+ERROR - 2016-03-24 14:06:44 --> Severity: Notice  --> Only variable references should be returned by reference E:\yaosheng\app\admin\system\core\Common.php 257
