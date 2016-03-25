@@ -27,7 +27,7 @@
             <p><img style="max-width:100%" src="_/images/f-logo.jpg"></p>
             <p>
               <a class="mr10" target="_blank" href="<?php echo $system['weibo']?>"><img src="_/images/wb.jpg"></a>
-              <a href="#"><img src="_/images/wx.jpg"></a>
+              <!--<a href="#"><img src="_/images/wx.jpg"></a>-->
             </p>
           </div>
          
