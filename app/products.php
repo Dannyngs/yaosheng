@@ -23,7 +23,7 @@ require_once 'header.php';
 
 
    <div class="col-md-3 mtb20">
-                  <a class="pro"  href="<?php echo $imgurl.$pro['image'];?>" data-lightbox="<?php echo $pro['cid']?>" data-title="<?php echo $pro['title']?>">
+                  <a class="pro"  href="product-post.php?id=<?php echo $pro['id'];?>">
                     <div class="allw">
                       <img class="lazy" data-original="<?php echo $imgurl.$pro['image'];?>">
                     </div>
