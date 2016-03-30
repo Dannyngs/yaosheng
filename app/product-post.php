@@ -24,7 +24,7 @@ require_once 'header.php';
                   <div class="allw mtb20">
                     <img src="<?php echo $imgurl.$pro['image'];?>">
                   </div>
-                  <div class="neww">
+                  <div class="allw neww">
                     <?php echo $pro['content']?>
                   </div>
                
