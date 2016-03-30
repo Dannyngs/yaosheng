@@ -73,7 +73,7 @@ require_once 'header.php';
 
 
                      <div class="col-md-3 allw mt30">
-              <a class="showa" href="#">
+              <a class="showa" href="product-post.php?id=<?php echo $show['id']?>">
                 <img class="showi" src="<?php echo $imgurl.$show['image'];?>">
                 <h4><?php echo $show['title']?></h4>
               </a>

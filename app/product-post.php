@@ -1,7 +1,7 @@
 <?php
 require_once 'init.php';
- 
-     $rs = $db->query("SELECT* FROM T_Product where id = ".$_GET['id']);
+
+     $rs = $db->query("SELECT* FROM T_Product,T_Cat where T_Product.id =$_GET[id] and T_Product.cid=T_Cat.id");
      $pro = $rs->fetch(); 
 
   ?>
@@ -14,7 +14,7 @@ require_once 'header.php';
 
        <div class="ptb20">
           <div class="container">
-             <p class="tit2"><span style="padding-bottom:5px;color:#858585;"><a href="products.php?id=<?php echo $pro['cid'];?>" style="color:#858585;">SP系列</a> > <?php echo $pro['title'];?></span></p>
+             <p class="tit2"><span style="padding-bottom:5px;color:#858585;"><a href="products.php?id=<?php echo $pro['cid'];?>" style="color:#858585;"><?php echo $pro['cat_name'];?></a> > <?php echo $pro['title'];?></span></p>
            
             <div class="row mtb20">
 
