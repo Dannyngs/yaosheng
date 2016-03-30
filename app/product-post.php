@@ -10,7 +10,7 @@ require_once 'header.php';
 ?>
 
  <div class="content">
-      <div class="allw"><img src="_/images/new-ban.jpg"></div>
+      <div class="allw"><img src="_/images/pro-ban.jpg"></div>
 
        <div class="ptb20">
           <div class="container">
@@ -21,9 +21,11 @@ require_once 'header.php';
               <div class="col-md-12 mtb20">
                 
                   <h4 class="text-center"><?php echo $pro['title'];?></h4>
-                  
-                  <div class="allw mtb20 neww">
-                   <?php echo $pro['content']?>
+                  <div class="allw mtb20">
+                    <img src="<?php echo $imgurl.$pro['image'];?>">
+                  </div>
+                  <div class="neww">
+                    <?php echo $pro['content']?>
                   </div>
                
               </div>
